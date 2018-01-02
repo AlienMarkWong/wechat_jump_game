@@ -53,7 +53,7 @@ def pull_screenshot():
         if screenshot_way == 2:
             binary_screenshot = screenshot.replace(b'\r\n', b'\n')
         else:
-            binary_screenshot = screenshot.replace(b'\r\r\n', b'\n')
+            binary_screenshot = screenshot.replace(b'\r\n', b'\n')
         f = open('autojump.png', 'wb')
         f.write(binary_screenshot)
         f.close()
